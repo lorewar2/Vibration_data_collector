@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_stop_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="301dp"
+        android:layout_y="161dp"
+        android:onClick="stop_recording"
+        android:text="Stop"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <Button
+        android:id="@+id/button_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="173dp"
+        android:layout_y="161dp"
+        android:onClick="share_file"
+        android:text="Export"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <Button
+        android:id="@+id/button_start_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="172dp"
+        android:layout_y="92dp"
+        android:onClick="start_recording"
+        android:text="Start Data Collection"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <Button
+        android:id="@+id/button_vibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="39dp"
+        android:layout_y="93dp"
+        android:onClick="vibrate"
+        android:text="Vibrate"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <Button
+        android:id="@+id/button_stop_vibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="42dp"
+        android:layout_y="158dp"
+        android:onClick="stop_vibrating"
+        android:text="Stop"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <EditText
+        android:id="@+id/text_input_amp"
+        android:layout_width="76dp"
+        android:layout_height="80dp"
+        android:layout_x="45dp"
+        android:layout_y="6dp"
+        android:text="-1"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <TextView
+        android:id="@+id/textx"
+        android:layout_width="113dp"
+        android:layout_height="79dp"
+        android:layout_x="2dp"
+        android:layout_y="310dp"
+        android:text="X:"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <TextView
+        android:id="@+id/texty"
+        android:layout_width="119dp"
+        android:layout_height="71dp"
+        android:layout_x="1dp"
+        android:layout_y="462dp"
+        android:text="Y:"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <TextView
+        android:id="@+id/textz"
+        android:layout_width="116dp"
+        android:layout_height="86dp"
+        android:layout_x="2dp"
+        android:layout_y="611dp"
+        android:text="Z:"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:layout_x="174dp"
+        android:layout_y="41dp"
+        android:text="Not Recording, Not Vibrating"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <com.example.Test.SimpleDrawingView
+        android:id="@+id/canvas_x_id"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:background="@mipmap/graph_background_foreground"
+        android:layout_x="115dp"
+        android:layout_y="250dp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <com.example.Test.SimpleDrawingView
+        android:id="@+id/canvas_y_id"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:background="@mipmap/graph_background_foreground"
+        android:layout_x="115dp"
+        android:layout_y="400dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <com.example.Test.SimpleDrawingView
+        android:id="@+id/canvas_z_id"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:background="@mipmap/graph_background_foreground"
+        android:layout_x="115dp"
+        android:layout_y="550dp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+
+</AbsoluteLayout>
